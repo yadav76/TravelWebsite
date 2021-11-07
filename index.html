@@ -2,75 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour and Travel Website</title>
-    <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- custom css link -->
-    <link rel="stylesheet" href="style.css">
+    <title>Logged in user</title>
 </head>
 <body>
-    <!-- Header Section starts -->
-
-    <header>
-
-        <div id="menu-bar" class="fas fa-bars"></div>
-
-        <a href="#" class="logo"><span>T</span>ravel</a>
-
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#book">book</a>
-            <a href="#packages">packages</a>
-            <a href="#services">services</a>
-            <a href="#gallery">gallery</a>
-            <a href="#review">review</a>
-            <a href="#contact">contact</a>
-        </nav>    
-        
-        <div class="icons">
-            <i class="fas fa-search" id="search-btn"></i>
-            <i class="fas fa-user" id="login-btn"></i>
-        </div>
-        
-        <form action="" class="search-bar-container">
-            <input type="search" name="" id="search-bar" placeholder="search-here...">
-            <label for="search-bar" class="fas fa-search"></label>
-        </form>
-    </header>
-
-    <!-- login form container -->
-
-    <div class="login-form-container">
-
-        <i class="fas fa-time" id="form-close"></i>
-
-        <form action="">
-            <h3>login</h3>
-            <input type="email" class="box" placeholder="enter your email" name="" id="">
-            <input type="password" class="box" placeholder="enter your password" name="" id="">
-            <input type="submit" value="Login Now" class="btn">
-            <input type="checkbox" id="remember">
-            <label for="remember">Remember Me</label>
-            <p>Forget password? <a href="#">Click Here</a></p>
-            <p>Don't have and account? <a href="#">Register Now</a></p>
-        </form>
-    </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-    <!-- custom JavaScript link -->
-    <script src="index.js"></script>
+    welcome {{request.user}}
+    <p>
+    This is the best website on this planet and you are very lucky to access it</p>
+    <a href="/logout">Logout</a>
 </body>
 </html>
